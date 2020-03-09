@@ -12,10 +12,12 @@
         <div class="product">
             <div class="product-image">
                 <img v-bind:src="image" alt="">
-                <a :href="link">Portfolio</a>
             </div>
             <div class="product-info">
                 <h1>{{product}}</h1>
+                <p v-if="inStock">In Stock</p>
+                <p v-else>Out of Stock!</p>
+                <span><h4 v-show="onSale">On Sale!</h4></span>
             </div>
             
         </div>

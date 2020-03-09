@@ -3,6 +3,7 @@ var app= new Vue({
     'data':{
         'product':'Socks',
         'image':'https://www.vuemastery.com/images/challenges/vmSocks-green-onWhite.jpg',
-        'link':'https://ronyonka.github.io'
+        'inStock':true,
+        'onSale':false
     }
 })
