@@ -26,14 +26,6 @@ var app= new Vue({
         },
         updateProduct(variantImage){
             this.image = variantImage
-        },
-        removeFromCart(){
-            if(this.cart>0){
-                this.cart --
-            }else{
-                this.cart = 0
-                alert('Cannot Remove Items From Empty Cart');
-            }
         }
     }
 })
